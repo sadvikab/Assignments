@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<table>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    table{
+        width: auto;
+    }
+
+    td{
+        width:auto;
+    }
+    
+    button{
+        width:100%;
+       
+        color: purple;
+        font-size: 30px;
+        height: 50px;
+    }
+    input{
+
+        width: max-content;
+        height: 40px;
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="cal">
+        <tr><input type="text" name="ot" id="input"></tr>
+        <table>
+            <tr>
+            <td><button onclick="cal('+')">+</button></td>
+            <td><button onclick="cal('-')">-</button></td>
+            <td><button onclick="cal('*')">*</button></td>
+            <td><button onclick="cal('%')">%</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="cal('9')">9</button></td>
+                <td><button onclick="cal('8')">8</button></td>
+                <td><button onclick="cal('7')">7</button></td>
+                <td><button onclick="cal('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="cal('6')">6</button></td>
+                <td><button onclick="cal('5')">5</button></td>
+                <td><button onclick="cal('4')">4</button></td>
+                <td><button onclick="result()">=</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="cal('3')">3</button></td>
+                <td><button onclick="cal('2')">2</button></td>
+            <td><button onclick="cal('1')">1</button></td>
+            <td><button onclick="cal('0')">0</button></td>
+
+            </tr>
+        </table>
+        </div>
+        <script>
+            function cal(no)
+            {
+
+                var res=document.getElementById("input");
+                res.value += no;
+            }
+
+            function result(){
+                var res=document.getElementById("input");
+                res.value = eval(res.value);
+            
+            }
+        </script>
+</body>
+</html>
