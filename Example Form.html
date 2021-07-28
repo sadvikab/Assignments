@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            text-align: left;
+            
+
+        }
+      fieldset{
+        
+          width: fit-content;
+          margin:auto;
+          font-size: larger;
+      }
+      form input,form textarea{
+            border: dotted 2px orangered;
+            padding: 3px;
+            color: blue;
+
+      }
+      form select{
+          font-style: italic;
+          color:chartreuse
+          
+      }
+      form input[type="submit"]{
+          border: solid 3px black;
+          background-color: lawngreen;
+          height: 40px;
+          color: hotpink;
+          cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Profile Info</legend>
+    First Name:<input type="text" placeholder="First name"><br>
+    Middle Name:<input type="text" placeholder="Middle name"><br>
+    Last Name:<input type="text" placeholder="Last name"><br>
+    Course:<select id="course" name="course" size="1">
+        <option>Course</option>
+        <option>Java</option>
+        <option>JS</option>
+        <option>C++</option>
+  </select><br>
+  Gender:<br>
+   <input type="radio" name="gen">Male<br>
+        <input type="radio" name="gen">Female<br>
+        <input type="radio" name="gen">Other<br>
+   Phone:<textarea cols="2" rows="1">+91</textarea><input type="tel"><br>
+   Address:<br>
+   <textarea cols="30" rows="3"></textarea>   <br>  
+   Email:<input type="email"><br>
+   Password:<input type="password"><br>
+   Re-Password:<input type="password"><br>
+   <input type="submit" value="Submit">
+</fieldset>
+</form>
+
+
+</body>
+</html>
